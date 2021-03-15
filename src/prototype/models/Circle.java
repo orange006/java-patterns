@@ -27,10 +27,6 @@ public class Circle extends Shape {
         return "Circle";
     }
 
-    public int getRadius() {
-        return radius;
-    }
-
     public void setRadius(int radius) {
         this.radius = radius;
     }
@@ -45,8 +41,6 @@ public class Circle extends Shape {
 
     @Override
     public String toString() {
-        StringBuilder builder = new StringBuilder();
-        builder.append("radius=").append(radius).append(", ").append(fillStyle);
-        return builder.toString();
+        return "radius=" + radius + ", " + fillStyle;
     }
 }

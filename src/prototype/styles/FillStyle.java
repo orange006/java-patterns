@@ -18,16 +18,8 @@ public class FillStyle {
         this.fillPattern = fillStyle.fillPattern;
     }
 
-    public Color getFillColor() {
-        return fillColor;
-    }
-
     public void setFillColor(Color fillColor) {
         this.fillColor = fillColor;
-    }
-
-    public FillPattern getFillPattern() {
-        return fillPattern;
     }
 
     public void setFillPattern(FillPattern fillPattern) {
@@ -36,8 +28,6 @@ public class FillStyle {
 
     @Override
     public String toString() {
-        StringBuilder builder = new StringBuilder();
-        builder.append("fillColor=").append(fillColor).append(", fillPattern=").append(fillPattern);
-        return builder.toString();
+        return "fillColor=" + fillColor + ", fillPattern=" + fillPattern;
     }
 }

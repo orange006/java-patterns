@@ -20,24 +20,12 @@ public class ShapeStyle {
         this.lineThickness = shapeStyle.lineThickness;
     }
 
-    public Color getLineColor() {
-        return lineColor;
-    }
-
     public void setLineColor(Color lineColor) {
         this.lineColor = lineColor;
     }
 
-    public LinePattern getLinePattern() {
-        return linePattern;
-    }
-
     public void setLinePattern(LinePattern linePattern) {
         this.linePattern = linePattern;
-    }
-
-    public double getLineThickness() {
-        return lineThickness;
     }
 
     public void setLineThickness(double lineThickness) {
@@ -46,10 +34,9 @@ public class ShapeStyle {
 
     @Override
     public String toString() {
-        StringBuilder builder = new StringBuilder();
-        builder.append("lineColor=").append(lineColor).append(", linePattern=").append(linePattern)
-                .append(", lineThickness=").append(lineThickness);
 
-        return builder.toString();
+        return "lineColor=" + lineColor +
+                ", linePattern=" + linePattern +
+                ", lineThickness=" + lineThickness;
     }
 }
